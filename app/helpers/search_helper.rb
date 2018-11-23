@@ -120,7 +120,7 @@ module SearchHelper
   end
 
   def current_scope
-    params[:scope] || ('current_project' unless @project.nil?)
+    params[:scope] || ('subprojects' unless @project.nil?)
   end
 
   def link_to_previous_search_page(pagination_previous_date)
